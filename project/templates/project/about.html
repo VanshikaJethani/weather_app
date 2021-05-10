@@ -1,0 +1,73 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title" style="font-size: 60px">About Us</h1>
+                <div id="google_translate_element"></div>
+
+                <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'en'
+                        }, 'google_translate_element');
+                    }
+                </script>
+                <h2 style="text-align: right">
+                    powered by
+                    <a href="https://openweathermap.org/" target="_blank">
+                        <div class="prath">
+                            <img style="width: 100px; height: 50px" src="../../static/logo.png" alt="" />
+                        </div>
+                    </a>
+
+                    <img src="./images/logo.png" alt="" />
+                </h2>
+                <h3 style="display: inline; float: left; padding: 10px">
+                    <a href="{% url 'home' %}"> Home </a>
+                </h3>
+                <h3 style="display: inline; float: left; padding: 10px">
+                    <a href="{% url 'about' %}"> About </a>
+                </h3>
+                <h3 style="display: inline; float: left; padding: 10px">
+                    <a href=" {% url 'help' %} "> How To </a>
+                </h3>
+            </div>
+        </div>
+    </section>
+    <h2 style="
+        font-size: 40px;
+        padding-top: 50px;
+        padding-left: 20px;
+        font-weight: bold;
+      ">
+        Weather App
+    </h2>
+    <p style="padding-left: 20px; padding-top: 20px">
+        This is an application for helping user to check weather. You can check weather in every city around the world. We used django for backend and html and css for the front end.
+    </p>
+    <p style="padding-left: 20px; padding-top: 50px; font-weight: bold">
+        Created By Prathiksha Pai, Pratham Gianani and Vanshika Jethani
+    </p>
+
+    <br>
+
+
+
+
+</body>
+
+</html>
